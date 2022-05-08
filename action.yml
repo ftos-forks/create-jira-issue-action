@@ -1,0 +1,22 @@
+name: 'Jira Api Functions'
+description: 'Jira Api Functions'
+inputs:
+  username:  # id of input
+    description: 'Atlassian Jira AUTH Username'
+    required: true
+    default: ''
+  token:  # id of input
+    description: 'Atlassian Jira AUTH Token'
+    required: true
+    default: ''
+  function-name:  # id of input
+    description: 'Name of the Function you want to call'
+    required: true
+    default: ''
+  
+# outputs:
+#   time: # id of output
+#     description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'index.js'
