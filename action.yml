@@ -9,14 +9,14 @@ inputs:
     description: 'Atlassian Jira AUTH Token'
     required: true
     default: ''
-  function-name:  # id of input
+  method-name:  # id of input
     description: 'Name of the Function you want to call'
     required: true
     default: ''
   
-# outputs:
-#   time: # id of output
-#     description: 'The time we greeted you'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
 runs:
   using: 'node16'
   main: 'index.js'
