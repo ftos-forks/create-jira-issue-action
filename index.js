@@ -3,7 +3,7 @@ const github = require('@actions/github');
 const fetch = require('node-fetch');
 
 const username = core.getInput('username')
-const password = core.getInput('password')
+const password = core.getInput('token')
 const method = core.getInput('method-name')
 
 const getIssueMetadata = () => {
